@@ -10,7 +10,7 @@ class ServiceSerializer(serializers.ModelSerializer):
 
 
 class ClientsSerializer(serializers.ModelSerializer):
-    service = ServiceSerializer
+    service = ServiceSerializer()
 
     class Meta:
         model = Clients
